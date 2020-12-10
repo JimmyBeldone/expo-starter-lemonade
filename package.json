@@ -1,5 +1,9 @@
 {
     "main": "node_modules/expo/AppEntry.js",
+    "name": "expo-starter-lemonade",
+    "author": "Jimmy Beldone <dev.jimmy.beldone@gmail.com>",
+    "description": "React Native starter with : Expo / Setup script / Automated version management, package publishing, auto generated changelog / Consistant code with Eslint, Prettier, pre-commit hook",
+    "license": "MIT",
     "scripts": {
         "start": "expo start",
         "android": "expo start --android",
@@ -9,7 +13,15 @@
         "commit": "git-cz",
         "lint": "eslint . --ext .js,.jsx",
         "fix": "eslint . --ext .js,.jsx --fix",
-        "format": "prettier --config .prettierrc '**/*.{json,js,jsx,css,stylus,md}' --write"
+        "format": "prettier --config .prettierrc '**/*.{json,js,jsx,css,stylus,md}' --write",
+        "semantic-release": "semantic-release"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/JimmyBeldone/expo-starter-lemonade"
+    },
+    "bugs": {
+        "url": "https://github.com/JimmyBeldone/expo-starter-lemonade/issues"
     },
     "dependencies": {
         "expo": "~40.0.0",
@@ -21,6 +33,8 @@
     },
     "devDependencies": {
         "@babel/core": "~7.9.0",
+        "@semantic-release/changelog": "^5.0.1",
+        "@semantic-release/git": "^9.0.0",
         "cz-conventional-changelog": "^3.3.0",
         "eslint": "7.2.0",
         "eslint-config-airbnb": "18.2.1",
@@ -35,7 +49,8 @@
         "husky": ">=4",
         "husky-git-emoji": "^1.0.1",
         "lint-staged": ">=10",
-        "prettier": "^2.2.1"
+        "prettier": "^2.2.1",
+        "semantic-release": "^17.3.0"
     },
     "private": true,
     "husky": {
