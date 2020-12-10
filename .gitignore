@@ -12,4 +12,18 @@ web-build/
 # macOS
 .DS_Store
 
+# dotenv environment variables file
+.env*
+
 .eslintcache
+
+# Yarn
+yarn-error.log
+.pnp/
+.pnp.js
+# Yarn Integrity file
+.yarn-integrity
+
+# setup files
+setupCopy
+setup/package.json
