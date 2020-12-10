@@ -14,7 +14,11 @@
         "lint": "eslint . --ext .js,.jsx",
         "fix": "eslint . --ext .js,.jsx --fix",
         "format": "prettier --config .prettierrc '**/*.{json,js,jsx,css,stylus,md}' --write",
-        "semantic-release": "semantic-release"
+        "semantic-release": "semantic-release",
+        "setup": "node setup/setupMessage.js && yarn && node setup/setup.js && yarn start",
+        "setup:copy": "rimraf setupCopy && cp ./package.json ./app.json ./setup/ && cp -r ./setup ./setupCopy",
+        "setup:test": "yarn setup:copy && node setup/setupMessage.js && yarn && yarn setup:test:init && yarn start",
+        "setup:test:init": "cross-env MODE=test node setup/setup.js"
     },
     "repository": {
         "type": "git",
@@ -35,7 +39,9 @@
         "@babel/core": "~7.9.0",
         "@semantic-release/changelog": "^5.0.1",
         "@semantic-release/git": "^9.0.0",
+        "chalk": "^4.1.0",
         "commitizen": "^4.2.2",
+        "cross-env": "^7.0.3",
         "cz-conventional-changelog": "^3.3.0",
         "devmoji": "^2.1.13",
         "eslint": "7.2.0",
@@ -51,6 +57,9 @@
         "husky": ">=4",
         "lint-staged": ">=10",
         "prettier": "^2.2.1",
+        "prompts": "^2.4.0",
+        "replace": "^1.2.0",
+        "rimraf": "^3.0.2",
         "semantic-release": "^17.3.0"
     },
     "private": true,
