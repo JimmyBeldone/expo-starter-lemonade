@@ -1,24 +1,21 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { StatusBar } from 'expo-status-bar';
 
 import MainLayout from '../../layouts/MainLayout';
 import TextApp from '../../components/TextApp';
+import ButtonMain from '../../components/ButtonMain';
 
-// const style = StyleSheet.create({
-//     container: {
-//         alignItems: 'center',
-//         backgroundColor: '#aaa',
-//         flex: 1,
-//         justifyContent: 'center',
-//     },
-// });
-
-function LoginScreen() {
+function LoginScreen({ navigation }) {
     return (
         <MainLayout>
             <TextApp>Login Screen</TextApp>
-            <StatusBar style='auto' />
+            <ButtonMain
+                action={() => {
+                    navigation.navigate('LoggedinNavigation');
+                }}
+                text='Go to Home'
+                large
+            />
         </MainLayout>
     );
 }

@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
+import { StatusBar } from 'expo-status-bar';
 
 import colors from '../../constants/colors';
 
@@ -14,7 +15,12 @@ const style = StyleSheet.create({
 });
 
 function MainLayout({ children }) {
-    return <View style={style.container}>{children}</View>;
+    return (
+        <View style={style.container}>
+            {children}
+            <StatusBar style='light' />
+        </View>
+    );
 }
 
 MainLayout.propTypes = { children: PropTypes.node.isRequired };
