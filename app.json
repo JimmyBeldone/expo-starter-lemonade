@@ -4,9 +4,9 @@
         "slug": "expo-starter-lemonade",
         "version": "1.0.0",
         "orientation": "portrait",
-        "icon": "./assets/icon.png",
+        "icon": "./src/assets/images/icons/icon.png",
         "splash": {
-            "image": "./assets/splash.png",
+            "image": "./src/assets/images/splash.png",
             "resizeMode": "contain",
             "backgroundColor": "#ffffff"
         },
@@ -19,12 +19,15 @@
         },
         "android": {
             "adaptiveIcon": {
-                "foregroundImage": "./assets/adaptive-icon.png",
+                "foregroundImage": "./src/assets/images/icons/adaptive-icon.png",
                 "backgroundColor": "#FFFFFF"
             }
         },
         "web": {
-            "favicon": "./assets/favicon.png"
+            "favicon": "./src/assets/images/icons/favicon.png"
+        },
+        "packagerOpts": {
+            "sourceExts": ["js", "json", "jsx", "svg", "ts", "tsx"]
         }
     }
 }
