@@ -1,3 +1,13 @@
+# [1.3.0](https://github.com/JimmyBeldone/expo-starter-lemonade/compare/v1.2.1...v1.3.0) (2020-12-18)
+
+
+### Features
+
+* ✨ Add string & device utils ([9151caf](https://github.com/JimmyBeldone/expo-starter-lemonade/commit/9151caf539fb1fabde117f0b7d7056ff023343ba))
+* ✨ Buttons components ([0d13df5](https://github.com/JimmyBeldone/expo-starter-lemonade/commit/0d13df59e51dd69129829435016044192d94042b))
+* ✨ Horizontal & Vertical Container ([a463913](https://github.com/JimmyBeldone/expo-starter-lemonade/commit/a463913cbc0d6ab70384835755442a2e30c720a0))
+* ✨ ImgBackground with overlay component ([ff6666e](https://github.com/JimmyBeldone/expo-starter-lemonade/commit/ff6666e4d782555a3a3eb883e9dc6933e354bc2e))
+
 ## [1.2.1](https://github.com/JimmyBeldone/expo-starter-lemonade/compare/v1.2.0...v1.2.1) (2020-12-11)
 
 
