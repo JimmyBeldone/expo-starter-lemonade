@@ -5,19 +5,18 @@ import { StatusBar } from 'expo-status-bar';
 
 import colors from '../../constants/colors';
 
-const style = StyleSheet.create({
+const styles = StyleSheet.create({
     container: {
-        alignItems: 'center',
         backgroundColor: colors.dark,
-        flex: 1,
-        justifyContent: 'center',
+        height: '100%',
+        width: '100%',
     },
 });
 
 function MainLayout({ children }) {
     return (
-        <View style={style.container}>
-            {children}
+        <View style={styles.container}>
+            <View style={styles.container}>{children}</View>
             <StatusBar style='light' />
         </View>
     );

@@ -1,8 +1,8 @@
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import React from 'react';
 
-import MainLayout from '../../layouts/MainLayout';
-import TextApp from '../../components/TextApp';
+import MainLayout from '../../../layouts/MainLayout';
+import TextApp from '../../../components/TextApp';
 
 function HomeScreen() {
     return (
@@ -13,7 +13,7 @@ function HomeScreen() {
 }
 
 HomeScreen.propTypes = {
-    navigation: PropTypes.object.isRequired,
+    // navigation: PropTypes.object.isRequired,
 };
 
 export default HomeScreen;
