@@ -8,50 +8,45 @@ import TextApp from '../TextApp';
 const styles = StyleSheet.create({
     button: {
         alignItems: 'center',
-        borderRadius: 12,
-        height: 50,
+        backgroundColor: 'transparent',
+        borderRadius: 20,
+        borderWidth: 2,
+        height: 40,
         justifyContent: 'center',
         minWidth: 150,
         paddingHorizontal: 25,
+        width: '100%',
     },
-    large: { width: '100%' },
     primary: {
-        backgroundColor: colors.aquamarine,
+        borderColor: colors.white,
     },
     secondary: {
-        backgroundColor: 'transparent',
         borderColor: colors.aquamarine,
-        borderWidth: 1,
     },
 });
 
-function ButtonMain({ action, isLarge, isSecondary, text }) {
-    const { button, large, primary, secondary } = styles;
+function ButtonAlt({ action, icon, isSecondary, text }) {
+    console.log('🚀 ~ ButtonAlt ~ icon', icon);
+    const { button, primary, secondary } = styles;
     return (
         <TouchableOpacity onPress={action}>
-            <View
-                style={[
-                    button,
-                    isLarge && large,
-                    isSecondary ? secondary : primary,
-                ]}
-            >
-                <TextApp fw='600'>{text}</TextApp>
+            <View style={[button, isSecondary ? secondary : primary]}>
+                <TextApp fs={14}>{text}</TextApp>
             </View>
         </TouchableOpacity>
     );
 }
 
-ButtonMain.defaultProps = {
-    isLarge: false,
+ButtonAlt.defaultProps = {
+    icon: null,
     isSecondary: false,
 };
 
-ButtonMain.propTypes = {
+ButtonAlt.propTypes = {
     action: PropTypes.func.isRequired,
-    isLarge: PropTypes.bool,
+    icon: PropTypes.string,
     isSecondary: PropTypes.bool,
     text: PropTypes.string.isRequired,
 };
 
-export default ButtonMain;
+export default ButtonAlt;
