@@ -1,39 +1,34 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 
-import WelcomeScreen from '../views/screens/WelcomeScreen';
-import LoginScreen from '../views/screens/LoginScreen';
+// import LoggedinNavigation from './LoggedinNavigation';
+// import colors from '../constants/colors';
+import PublicNavigation from './PublicNavigation';
 import LoggedinNavigation from './LoggedinNavigation';
-import colors from '../constants/colors';
-
-const { Navigator, Screen } = createStackNavigator();
 
 function AppNavigation() {
+    const isSignedIn = false;
     return (
-        <NavigationContainer>
-            <Navigator
-                screenOptions={{
-                    headerBackTitleVisible: false,
-                    headerTintColor: colors.aquamarine,
-                    headerTitleStyle: {
-                        fontWeight: '500',
-                    },
-                    headerTransparent: true,
-                }}
-            >
-                <Screen name='Welcome' component={WelcomeScreen} />
-                <Screen name='Login' component={LoginScreen} />
-                <Screen
-                    name='LoggedinNavigation'
-                    options={{
-                        headerBackTitleVisible: false,
-                        title: 'Dashboard',
-                    }}
-                    component={LoggedinNavigation}
-                />
-            </Navigator>
-        </NavigationContainer>
+        <SafeAreaProvider>
+            <NavigationContainer>
+                {isSignedIn ? <LoggedinNavigation /> : <PublicNavigation />}
+
+                {/* <Navigator>
+                    <Screen name='Welcome' component={WelcomeScreen} />
+                    <Screen name='OnBoarding' component={OnBoardingScreen} />
+                    <Screen name='Login' component={LoginScreen} />
+                    <Screen
+                        name='LoggedinNavigation'
+                        options={{
+                            headerBackTitleVisible: false,
+                            title: 'Dashboard',
+                        }}
+                        component={LoggedinNavigation}
+                    />
+                </Navigator> */}
+            </NavigationContainer>
+        </SafeAreaProvider>
     );
 }
 
