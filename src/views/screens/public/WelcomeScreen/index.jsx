@@ -10,6 +10,7 @@ import TextApp from '../../../components/TextApp/index';
 import ContainerVertical from '../../../components/ContainerVertical';
 import ContainerHorizontal from '../../../components/ContainerHorizontal';
 import ImgBackground from '../../../components/ImgBackground';
+import Logo from '../../../components/Logo/index';
 
 const styles = StyleSheet.create({
     buttonContainer: { marginBottom: 32, width: '100%' },
@@ -41,8 +42,15 @@ function WelcomeScreen({ navigation }) {
                     <ContainerHorizontal>
                         <View style={container}>
                             <View style={title}>
-                                <TextApp fw='800' fs={28}>
-                                    My App title
+                                <Logo />
+                                <TextApp
+                                    fw='800'
+                                    fs={28}
+                                    style={{
+                                        textAlign: 'center',
+                                    }}
+                                >
+                                    Expo starter Lemonade
                                 </TextApp>
                             </View>
                             <View style={buttonContainer}>

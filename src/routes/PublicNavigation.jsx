@@ -4,8 +4,8 @@ import { createStackNavigator } from '@react-navigation/stack';
 import WelcomeScreen from '../views/screens/public/WelcomeScreen';
 import OnBoardingScreen from '../views/screens/public/OnboardingScreen';
 import LoginScreen from '../views/screens/public/LoginScreen';
+import ForgottenPasswordScreen from '../views/screens/public/ForgotPasswordScreen';
 import colors from '../constants/colors';
-import LoginFormScreen from '../views/screens/public/LoginFormScreen';
 
 const { Navigator, Screen } = createStackNavigator();
 
@@ -29,7 +29,10 @@ function PublicNavigation() {
             <Screen name='welcome' component={WelcomeScreen} />
             <Screen name='on-boarding' component={OnBoardingScreen} />
             <Screen name='login' component={LoginScreen} />
-            <Screen name='login/form' component={LoginFormScreen} />
+            <Screen
+                name='forgotten-password'
+                component={ForgottenPasswordScreen}
+            />
         </Navigator>
     );
 }

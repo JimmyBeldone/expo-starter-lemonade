@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 import { View } from 'react-native';
 
@@ -8,53 +7,61 @@ import TextApp from '../../../components/TextApp';
 import ContainerVertical from '../../../components/ContainerVertical';
 import ContainerHorizontal from '../../../components/ContainerHorizontal';
 import ButtonAlt from '../../../components/ButtonAlt/index';
+import Logo from '../../../components/Logo/index';
+import FormLoginAnimation from '../../../components/FormLoginAnimation/index';
 
-function LoginScreen({ navigation }) {
+function LoginScreen() {
     return (
         <MainLayout>
             <ContainerVertical>
                 <ContainerHorizontal>
-                    <View>
-                        <TextApp fw='800' fs={28}>
-                            Welcome back !
-                        </TextApp>
-                        <TextApp>Sign in</TextApp>
-                    </View>
-                    <View>
-                        <ButtonAlt
-                            action={() => {
-                                navigation.navigate('login/form');
-                            }}
-                            text='Connect with email'
-                            isSecondary
-                        />
-                        <ButtonAlt
-                            action={() => {
-                                navigation.navigate('login/form');
-                            }}
-                            text='Connect with Facebook'
-                        />
-                        <ButtonAlt
-                            action={() => {
-                                navigation.navigate('login/form');
-                            }}
-                            text='Connect with Gmail'
-                        />
-                        <ButtonAlt
-                            action={() => {
-                                navigation.navigate('login/form');
-                            }}
-                            text='Connect with Apple'
-                        />
+                    <View
+                        style={{
+                            alignItems: 'center',
+                            height: '100%',
+                            justifyContent: 'flex-start',
+                            width: '100%',
+                        }}
+                    >
+                        <View style={{ marginBottom: 76 }}>
+                            <Logo />
+                            <TextApp fw='800' fs={28}>
+                                Welcome back !
+                            </TextApp>
+                            <TextApp>Sign in</TextApp>
+                        </View>
+                        <View style={{ width: '100%' }}>
+                            <FormLoginAnimation />
+                            <View style={{ marginTop: 16 }}>
+                                <ButtonAlt
+                                    action={() => {
+                                        console.log('connect');
+                                    }}
+                                    text='Connect with Facebook'
+                                />
+                            </View>
+                            <View style={{ marginTop: 16 }}>
+                                <ButtonAlt
+                                    action={() => {
+                                        console.log('connect');
+                                    }}
+                                    text='Connect with Gmail'
+                                />
+                            </View>
+                            <View style={{ marginTop: 16 }}>
+                                <ButtonAlt
+                                    action={() => {
+                                        console.log('connect');
+                                    }}
+                                    text='Connect with Apple'
+                                />
+                            </View>
+                        </View>
                     </View>
                 </ContainerHorizontal>
             </ContainerVertical>
         </MainLayout>
     );
 }
-
-LoginScreen.propTypes = {
-    navigation: PropTypes.object.isRequired,
-};
 
 export default LoginScreen;

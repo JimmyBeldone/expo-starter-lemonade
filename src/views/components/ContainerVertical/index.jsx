@@ -4,7 +4,7 @@ import { View, StyleSheet } from 'react-native';
 import { useHeaderHeight } from '@react-navigation/stack';
 import {
     SafeAreaView,
-    // useSafeAreaInsets,
+    useSafeAreaInsets,
 } from 'react-native-safe-area-context';
 
 const styles = StyleSheet.create({
@@ -15,10 +15,14 @@ const styles = StyleSheet.create({
 
 function ContainerVertical({ children, hasHeader }) {
     const headerHeight = useHeaderHeight();
-    console.log('🚀 ~ ContainerVertical ~ headerHeight', headerHeight);
-    // const insets = useSafeAreaInsets();
+    const insets = useSafeAreaInsets();
     return hasHeader ? (
-        <View style={[styles.container, { paddingTop: headerHeight }]}>
+        <View
+            style={[
+                styles.container,
+                { paddingBottom: insets.bottom, paddingTop: headerHeight },
+            ]}
+        >
             {children}
         </View>
     ) : (
