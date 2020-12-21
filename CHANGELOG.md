@@ -1,3 +1,20 @@
+# [1.4.0](https://github.com/JimmyBeldone/expo-starter-lemonade/compare/v1.3.0...v1.4.0) (2020-12-21)
+
+
+### Bug Fixes
+
+* 🐛 ContainerVertical paddingBottom ([be93f0c](https://github.com/JimmyBeldone/expo-starter-lemonade/commit/be93f0c4b56aaecc42d5cece0c50491f9e76bea7))
+
+
+### Features
+
+* ✨ Add ForgottenPasswordScreen path ([5ed4b6b](https://github.com/JimmyBeldone/expo-starter-lemonade/commit/5ed4b6b8debbd6282562b2a9f8d5126cee3196a2))
+* ✨ Add Logo component ([1dd9444](https://github.com/JimmyBeldone/expo-starter-lemonade/commit/1dd94444e45760d00c32d6b32b12780a0c252443))
+* ✨ Add TabNavigator ([27e4965](https://github.com/JimmyBeldone/expo-starter-lemonade/commit/27e4965918cd747ba818f92c34ccc49d408393a3))
+* ✨ FormLogin ([6140d39](https://github.com/JimmyBeldone/expo-starter-lemonade/commit/6140d3970ca2ff5696ca1ab668de89d2e427e89f))
+* ✨ FormLogin animation ([effa247](https://github.com/JimmyBeldone/expo-starter-lemonade/commit/effa247a180214ace2fee1f09dc17aaeadba325e))
+* ✨ input logo ([b1ba857](https://github.com/JimmyBeldone/expo-starter-lemonade/commit/b1ba8576a87dda0e87fd2865aaec440025918d67))
+
 # [1.3.0](https://github.com/JimmyBeldone/expo-starter-lemonade/compare/v1.2.1...v1.3.0) (2020-12-18)
 
 
