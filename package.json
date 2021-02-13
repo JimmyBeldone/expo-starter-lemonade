@@ -76,7 +76,7 @@
         "prompts": "2.4.0",
         "replace": "1.2.0",
         "rimraf": "3.0.2",
-        "semantic-release": "17.3.0"
+        "semantic-release": "17.3.9"
     },
     "private": true,
     "husky": {
