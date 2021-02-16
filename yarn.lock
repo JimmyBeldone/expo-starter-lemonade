@@ -1444,10 +1444,10 @@
   resolved "https://registry.yarnpkg.com/@react-native-community/masked-view/-/masked-view-0.1.10.tgz#5dda643e19e587793bc2034dd9bf7398ad43d401"
   integrity sha512-rk4sWFsmtOw8oyx8SD3KSvawwaK7gRBSEIy2TAwURyGt+3TizssXP1r8nx3zY+R7v2vYYHXZ+k2/GULAT/bcaQ==
 
-"@react-native-community/viewpager@4.2.0":
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/@react-native-community/viewpager/-/viewpager-4.2.0.tgz#11a4453715eb45cb0f732c98666ce168b800dfa4"
-  integrity sha512-tptvkyStulE9Jv/LVYSldvydAq3DVOwsfqmy3mTh3NWl1LZwE4gZwZ455jiRmW5StsJ3Q/Od/GGsN0FI8gHAXQ==
+"@react-native-community/viewpager@5.0.6":
+  version "5.0.6"
+  resolved "https://registry.yarnpkg.com/@react-native-community/viewpager/-/viewpager-5.0.6.tgz#d88b4f17910d3bfdb6efe135a8155eff59d519e8"
+  integrity sha512-Z0WQTuqdw23bW81Ux9QjY8Sl1KTSvSh0f3Gmxgf38t7TDxtOsAz1IoMqyBNWNNR9BiWMs0cYLcgAJIiw0CJuDQ==
 
 "@react-navigation/bottom-tabs@^5.11.2":
   version "5.11.2"
