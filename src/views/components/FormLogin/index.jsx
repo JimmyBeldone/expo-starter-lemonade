@@ -26,7 +26,11 @@ const styles = StyleSheet.create({
 });
 
 function FormLogin() {
-    const { control, errors, handleSubmit } = useForm();
+    const {
+        control,
+        formState: { errors },
+        handleSubmit,
+    } = useForm();
     const navigation = useNavigation();
 
     const onSubmit = (data) => {
@@ -46,7 +50,7 @@ function FormLogin() {
                     required: { message: 'Email is required', value: true },
                 }}
                 control={control}
-                render={({ onChange, value }) => (
+                render={({ field: { onChange, value } }) => (
                     <InputBloc
                         errors={errors}
                         onChangeText={(text) => onChange(text)}
@@ -66,7 +70,7 @@ function FormLogin() {
                     required: { message: 'Password is required', value: true },
                 }}
                 control={control}
-                render={({ onChange, value }) => (
+                render={({ field: { onChange, value } }) => (
                     <InputBloc
                         errors={errors}
                         onChangeText={(text) => onChange(text)}
