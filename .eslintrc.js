@@ -9,7 +9,6 @@ module.exports = {
         'airbnb',
         'airbnb/hooks',
         'prettier',
-        'prettier/react',
         'plugin:prettier/recommended',
     ],
     globals: {

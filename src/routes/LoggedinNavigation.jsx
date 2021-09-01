@@ -11,6 +11,7 @@ function LoggedinNavigation() {
     return (
         <Navigator
             screenOptions={{
+                header: () => null,
                 // headerBackTitleVisible: false,
                 headerTintColor: colors.aquamarine,
                 headerTitleStyle: {
