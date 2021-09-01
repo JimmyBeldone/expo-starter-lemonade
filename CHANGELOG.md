@@ -1,3 +1,10 @@
+## [1.5.2](https://github.com/JimmyBeldone/expo-starter-lemonade/compare/v1.5.1...v1.5.2) (2021-09-01)
+
+
+### Bug Fixes
+
+* **deps:** pin dependencies ([21ff81b](https://github.com/JimmyBeldone/expo-starter-lemonade/commit/21ff81b22f410c4d7cd733004bd1c013d432ce9a))
+
 ## [1.5.1](https://github.com/JimmyBeldone/expo-starter-lemonade/compare/v1.5.0...v1.5.1) (2021-09-01)
 
 
