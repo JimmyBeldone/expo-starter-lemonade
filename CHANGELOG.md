@@ -1,3 +1,15 @@
+# [1.5.0](https://github.com/JimmyBeldone/expo-starter-lemonade/compare/v1.4.0...v1.5.0) (2021-09-01)
+
+
+### Bug Fixes
+
+* 🐛 update dev dependencies ([721eeb1](https://github.com/JimmyBeldone/expo-starter-lemonade/commit/721eeb1b967b798a65373fdd40a26b6229d59fda))
+
+
+### Features
+
+* ✨ migrate to expo [@42](https://github.com/42) ([07491fd](https://github.com/JimmyBeldone/expo-starter-lemonade/commit/07491fde135e0918898c258e2d09ce80cbe05e7f))
+
 # [1.4.0](https://github.com/JimmyBeldone/expo-starter-lemonade/compare/v1.3.0...v1.4.0) (2020-12-21)
 
 
