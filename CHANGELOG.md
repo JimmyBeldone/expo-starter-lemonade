@@ -1,3 +1,11 @@
+## [1.5.4](https://github.com/JimmyBeldone/expo-starter-lemonade/compare/v1.5.3...v1.5.4) (2021-11-11)
+
+
+### Bug Fixes
+
+* 🐛 lint with new config ([8174212](https://github.com/JimmyBeldone/expo-starter-lemonade/commit/817421203512fe5d1eea33f561e128f9272f783b))
+* 🐛 update devdependencies ([15a7986](https://github.com/JimmyBeldone/expo-starter-lemonade/commit/15a79866223f49a9a018d6394e631da429a68c74))
+
 ## [1.5.3](https://github.com/JimmyBeldone/expo-starter-lemonade/compare/v1.5.2...v1.5.3) (2021-09-01)
 
 
