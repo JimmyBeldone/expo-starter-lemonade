@@ -18,7 +18,8 @@
         "setup": "node setup/setupMessage.js && yarn && node setup/setup.js && yarn start",
         "setup:copy": "rimraf setupCopy && cp ./package.json ./app.json ./setup/ && cp -r ./setup ./setupCopy",
         "setup:test": "yarn setup:copy && node setup/setupMessage.js && yarn && yarn setup:test:init && yarn start",
-        "setup:test:init": "cross-env MODE=test node setup/setup.js"
+        "setup:test:init": "cross-env MODE=test node setup/setup.js",
+        "prepare": "husky install"
     },
     "repository": {
         "type": "git",
@@ -71,7 +72,7 @@
         "eslint-plugin-react-hooks": "4.2.0",
         "eslint-plugin-sort-destructure-keys": "1.3.5",
         "eslint-plugin-sort-keys-fix": "1.1.2",
-        "husky": "4.3.5",
+        "husky": "^7.0.0",
         "lint-staged": "10.5.3",
         "prettier": "2.3.2",
         "prompts": "2.4.1",
@@ -80,12 +81,6 @@
         "semantic-release": "17.4.7"
     },
     "private": true,
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged",
-            "prepare-commit-msg": "npx --no-install devmoji -e --lint"
-        }
-    },
     "lint-staged": {
         "*.(js|jsx)": [
             "eslint --cache --fix",
