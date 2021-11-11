@@ -35,6 +35,10 @@ module.exports = {
         'react-hooks/exhaustive-deps': 'warn',
         'react-hooks/rules-of-hooks': 'error',
         'react/forbid-prop-types': 0,
+        'react/function-component-definition': [
+            2,
+            { namedComponents: 'arrow-function' },
+        ],
         'react/jsx-indent': 0,
         'react/jsx-indent-props': 0,
         'react/jsx-props-no-spreading': 0,
