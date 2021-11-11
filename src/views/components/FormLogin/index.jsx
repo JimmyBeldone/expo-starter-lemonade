@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     },
 });
 
-function FormLogin() {
+const FormLogin = () => {
     const {
         control,
         formState: { errors },
@@ -96,7 +96,7 @@ function FormLogin() {
             <ButtonMain text='Sign in' action={handleSubmit(onSubmit)} />
         </View>
     );
-}
+};
 
 // FormLogin.propTypes = {};
 

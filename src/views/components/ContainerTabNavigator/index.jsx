@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
     },
 });
 
-function ContainerTabNavigator({ children }) {
+const ContainerTabNavigator = ({ children }) => {
     const insets = useSafeAreaInsets();
     return (
         <SafeAreaView
@@ -21,7 +21,7 @@ function ContainerTabNavigator({ children }) {
             <View style={styles.container}>{children}</View>
         </SafeAreaView>
     );
-}
+};
 
 ContainerTabNavigator.propTypes = {
     children: PropTypes.node.isRequired,

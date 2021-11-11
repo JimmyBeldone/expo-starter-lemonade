@@ -10,7 +10,7 @@ import ButtonAlt from '../../../components/ButtonAlt/index';
 import Logo from '../../../components/Logo/index';
 import FormLoginAnimation from '../../../components/FormLoginAnimation/index';
 
-function LoginScreen() {
+const LoginScreen = () => {
     return (
         <MainLayout>
             <ContainerVertical>
@@ -62,6 +62,6 @@ function LoginScreen() {
             </ContainerVertical>
         </MainLayout>
     );
-}
+};
 
 export default LoginScreen;

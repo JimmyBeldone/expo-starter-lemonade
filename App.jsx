@@ -26,7 +26,7 @@ import {
 } from '@expo-google-fonts/montserrat';
 import AppNavigation from './src/routes/AppNavigation';
 
-export default function App() {
+const App = () => {
     const [fontsLoaded] = useFonts({
         Montserrat_100Thin,
         Montserrat_100Thin_Italic,
@@ -53,4 +53,6 @@ export default function App() {
     }
 
     return <AppNavigation />;
-}
+};
+
+export default App;

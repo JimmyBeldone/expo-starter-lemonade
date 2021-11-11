@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     },
 });
 
-function ContainerVertical({ children, hasHeader }) {
+const ContainerVertical = ({ children, hasHeader }) => {
     const headerHeight = useHeaderHeight();
     const insets = useSafeAreaInsets();
     return hasHeader ? (
@@ -30,7 +30,7 @@ function ContainerVertical({ children, hasHeader }) {
             <View style={styles.container}>{children}</View>
         </SafeAreaView>
     );
-}
+};
 
 ContainerVertical.defaultProps = {
     hasHeader: true,

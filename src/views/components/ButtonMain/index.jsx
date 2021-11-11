@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     },
 });
 
-function ButtonMain({ action, isLarge, isSecondary, text }) {
+const ButtonMain = ({ action, isLarge, isSecondary, text }) => {
     const { button, large, primary, secondary } = styles;
     return (
         <TouchableOpacity onPress={action}>
@@ -40,7 +40,7 @@ function ButtonMain({ action, isLarge, isSecondary, text }) {
             </View>
         </TouchableOpacity>
     );
-}
+};
 
 ButtonMain.defaultProps = {
     isLarge: false,

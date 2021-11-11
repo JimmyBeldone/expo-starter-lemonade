@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
     },
 });
 
-function OnBoardingScreen({ navigation }) {
+const OnBoardingScreen = ({ navigation }) => {
     const insets = useSafeAreaInsets();
     return (
         <MainLayout>
@@ -69,7 +69,7 @@ function OnBoardingScreen({ navigation }) {
             </View>
         </MainLayout>
     );
-}
+};
 
 OnBoardingScreen.propTypes = {
     navigation: PropTypes.object.isRequired,

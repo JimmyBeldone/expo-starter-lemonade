@@ -7,7 +7,7 @@ import colors from '../constants/colors';
 
 const { Navigator, Screen } = createBottomTabNavigator();
 
-function LoggedinNavigation() {
+const LoggedinNavigation = () => {
     return (
         <Navigator
             screenOptions={{
@@ -24,6 +24,6 @@ function LoggedinNavigation() {
             <Screen name='Profile' component={ProfileScreen} />
         </Navigator>
     );
-}
+};
 
 export default LoggedinNavigation;

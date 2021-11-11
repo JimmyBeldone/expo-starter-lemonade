@@ -4,7 +4,7 @@ import { Text } from 'react-native';
 
 import colors from '../../../constants/colors';
 
-function TextApp({ children, fs, fw, style, textColor }) {
+const TextApp = ({ children, fs, fw, style, textColor }) => {
     const baseStyle = {
         color: colors[textColor],
         fontSize: fs,
@@ -13,7 +13,7 @@ function TextApp({ children, fs, fw, style, textColor }) {
     };
 
     return <Text style={baseStyle}>{children}</Text>;
-}
+};
 
 TextApp.defaultProps = {
     fs: 16,

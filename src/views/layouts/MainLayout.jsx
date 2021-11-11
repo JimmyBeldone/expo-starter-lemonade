@@ -13,14 +13,14 @@ const styles = StyleSheet.create({
     },
 });
 
-function MainLayout({ children }) {
+const MainLayout = ({ children }) => {
     return (
         <View style={styles.container}>
             <View style={styles.container}>{children}</View>
             <StatusBar style='light' />
         </View>
     );
-}
+};
 
 MainLayout.propTypes = { children: PropTypes.node.isRequired };
 

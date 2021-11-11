@@ -9,9 +9,9 @@ const styles = StyleSheet.create({
     },
 });
 
-function ContainerHorizontal({ children }) {
+const ContainerHorizontal = ({ children }) => {
     return <View style={styles.container}>{children}</View>;
-}
+};
 
 ContainerHorizontal.propTypes = {
     children: PropTypes.node.isRequired,
