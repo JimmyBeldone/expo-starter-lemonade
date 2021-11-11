@@ -9,7 +9,7 @@ import colors from '../constants/colors';
 
 const { Navigator, Screen } = createStackNavigator();
 
-function PublicNavigation() {
+const PublicNavigation = () => {
     return (
         <Navigator
             screenOptions={{
@@ -35,6 +35,6 @@ function PublicNavigation() {
             />
         </Navigator>
     );
-}
+};
 
 export default PublicNavigation;

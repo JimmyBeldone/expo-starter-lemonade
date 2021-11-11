@@ -4,7 +4,7 @@ import { TouchableOpacity } from 'react-native';
 
 import TextApp from '../TextApp';
 
-function ButtonLink({ action, text }) {
+const ButtonLink = ({ action, text }) => {
     return (
         <TouchableOpacity onPress={action}>
             <TextApp
@@ -19,7 +19,7 @@ function ButtonLink({ action, text }) {
             </TextApp>
         </TouchableOpacity>
     );
-}
+};
 
 ButtonLink.propTypes = {
     action: PropTypes.func.isRequired,

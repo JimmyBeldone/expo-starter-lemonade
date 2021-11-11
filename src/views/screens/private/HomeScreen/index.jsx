@@ -6,7 +6,7 @@ import TextApp from '../../../components/TextApp';
 import ContainerTabNavigator from '../../../components/ContainerTabNavigator';
 import ContainerHorizontal from '../../../components/ContainerHorizontal';
 
-function HomeScreen() {
+const HomeScreen = () => {
     return (
         <MainLayout>
             <ContainerTabNavigator>
@@ -16,7 +16,7 @@ function HomeScreen() {
             </ContainerTabNavigator>
         </MainLayout>
     );
-}
+};
 
 HomeScreen.propTypes = {
     // navigation: PropTypes.object.isRequired,

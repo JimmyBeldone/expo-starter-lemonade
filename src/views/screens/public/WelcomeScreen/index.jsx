@@ -29,11 +29,10 @@ const styles = StyleSheet.create({
 });
 
 const image = {
-    uri:
-        'https://images.unsplash.com/photo-1554675427-1d637bdb5a12?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=973&q=80',
+    uri: 'https://images.unsplash.com/photo-1554675427-1d637bdb5a12?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=973&q=80',
 };
 
-function WelcomeScreen({ navigation }) {
+const WelcomeScreen = ({ navigation }) => {
     const { buttonContainer, container, title } = styles;
     return (
         <MainLayout>
@@ -72,7 +71,7 @@ function WelcomeScreen({ navigation }) {
             </ImgBackground>
         </MainLayout>
     );
-}
+};
 
 WelcomeScreen.propTypes = {
     navigation: PropTypes.object.isRequired,

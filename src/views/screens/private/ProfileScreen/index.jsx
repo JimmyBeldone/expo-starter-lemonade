@@ -6,7 +6,7 @@ import MainLayout from '../../../layouts/MainLayout';
 import ContainerTabNavigator from '../../../components/ContainerTabNavigator';
 import ContainerHorizontal from '../../../components/ContainerHorizontal';
 
-function ProfileScreen({ navigation }) {
+const ProfileScreen = ({ navigation }) => {
     console.log('🚀 ~ ProfileScreen ~ navigation', navigation);
 
     return (
@@ -18,7 +18,7 @@ function ProfileScreen({ navigation }) {
             </ContainerTabNavigator>
         </MainLayout>
     );
-}
+};
 
 ProfileScreen.propTypes = {
     navigation: PropTypes.object.isRequired,

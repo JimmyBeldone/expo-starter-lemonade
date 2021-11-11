@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     },
 });
 
-function ButtonAlt({ action, icon, isSecondary, text }) {
+const ButtonAlt = ({ action, icon, isSecondary, text }) => {
     console.log('🚀 ~ ButtonAlt ~ icon', icon);
     const { button, primary, secondary } = styles;
     return (
@@ -35,7 +35,7 @@ function ButtonAlt({ action, icon, isSecondary, text }) {
             </View>
         </TouchableOpacity>
     );
-}
+};
 
 ButtonAlt.defaultProps = {
     icon: null,

@@ -7,7 +7,7 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import PublicNavigation from './PublicNavigation';
 import LoggedinNavigation from './LoggedinNavigation';
 
-function AppNavigation() {
+const AppNavigation = () => {
     const isSignedIn = false;
     return (
         <SafeAreaProvider>
@@ -30,6 +30,6 @@ function AppNavigation() {
             </NavigationContainer>
         </SafeAreaProvider>
     );
-}
+};
 
 export default AppNavigation;

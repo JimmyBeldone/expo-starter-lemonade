@@ -22,7 +22,7 @@ const styles = {
     wrapper: { marginBottom: 16, width: '100%' },
 };
 
-function InputBloc({ errors, name, ...props }) {
+const InputBloc = ({ errors, name, ...props }) => {
     return (
         <View style={styles.wrapper}>
             <TextInput
@@ -41,7 +41,7 @@ function InputBloc({ errors, name, ...props }) {
             )}
         </View>
     );
-}
+};
 
 InputBloc.defaultProps = {
     errors: null,
